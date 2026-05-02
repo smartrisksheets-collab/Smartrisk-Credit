@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI-powered quantitative credit risk assessment for Nigerian capital markets. Score Commercial Paper Offerings in under 60 seconds.">
+  <meta name="description" content="AI-powered quantitative credit risk assessment for Nigerian capital markets. Score Commercial Paper Offerings in under 5 minutes.">
   <meta property="og:title" content="SmartRisk Credit — AI-powered CP Risk Assessment Scoring">
-  <meta property="og:description" content="Analyse Commercial Paper Offerings in 4 steps. Professional PDF report in under 60 seconds.">
+  <meta property="og:description" content="Analyse Commercial Paper Offerings in 4 steps. Professional PDF report in under 5 minutes.">
   <meta property="og:url" content="https://smartriskcredit.smartrisksheets.com">
   <title>SmartRisk Credit — CP Quantitative Risk Assessment</title>
    <link rel="icon" type="image/png" href="https://smartrisksheets.com/wp-content/uploads/2025/09/cropped-Smartrisksheets-favicon-v2.png">
@@ -562,7 +562,7 @@
     <a class="nav-link" href="#how">How it works</a>
     <a class="nav-link" href="#scoring">Scoring</a>
     <a class="nav-link" href="#pricing">Pricing</a>
-    <a class="nav-link" href="mailto:info@smartrisksheets.com">Contact</a>
+    <a class="nav-link" href="#" onclick="openContactModal();return false;">Contact</a>
     <button class="nav-cta" onclick="window.location.href='https://assess.smartrisksheets.com/login'">Start Free Trial</button>
   </div>
   <button class="hamburger" id="hamburger-btn" onclick="toggleNav()" aria-label="Toggle navigation">
@@ -575,8 +575,8 @@
   <a class="mobile-nav-link" href="#how"     onclick="closeNav()">How it works</a>
   <a class="mobile-nav-link" href="#scoring" onclick="closeNav()">Scoring</a>
   <a class="mobile-nav-link" href="#pricing" onclick="closeNav()">Pricing</a>
-  <a class="mobile-nav-link" href="mailto:info@smartrisksheets.com" onclick="closeNav()">Contact</a>
-  <button class="mobile-nav-cta" onclick="closeNav(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Free Trial</button>
+  <a class="mobile-nav-link" href="#" onclick="closeNav();openContactModal();return false;">Contact</a>
+  <button class="mobile-nav-cta" onclick="closeNav(); window.location.href='https://assess.smartrisksheets.com/login'">Start Free Trial</button>
 </div>
 
 <!-- HERO -->
@@ -591,7 +591,7 @@
     </div>
    <div class="hero-stats">
       <div class="hstat"><div class="hstat-v">2 free</div><div class="hstat-l">Trial assessments</div></div>
-      <div class="hstat"><div class="hstat-v">~60s</div><div class="hstat-l">Per assessment</div></div>
+      <div class="hstat"><div class="hstat-v">~5 mins</div><div class="hstat-l">Per assessment</div></div>
       <div class="hstat"><div class="hstat-v">10 ratios</div><div class="hstat-l">56-point scoring model</div></div>
     </div>
   </div>
@@ -753,7 +753,7 @@
       <div class="pfeat"><div class="pcheck">&#10003;</div>AI risk narrative</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Full PDF report download</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Email verification only</div>
-      <button class="pbtn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Free Trial</button>
+      <button class="pbtn" onclick="window.location.href='https://assess.smartrisksheets.com/login'">Start Free Trial</button>
     </div>
 
     <div class="pcard">
@@ -766,7 +766,7 @@
       <div class="pfeat"><div class="pcheck">&#10003;</div>CP indicative terms extraction</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Preview &amp; edit AI narrative</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Credits valid for 12 months.</div>
-      <button class="pbtn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Buy Starter Pack</button>
+      <button class="pbtn" onclick="window.location.href='https://assess.smartrisksheets.com/login'">Buy Starter Pack</button>
       <div class="poverage">Access granted immediately after payment</div>
     </div>
 
@@ -781,7 +781,7 @@
       <div class="pfeat"><div class="pcheck">&#10003;</div>Assessment history log</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Credits valid for 12 months.</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Save 10% vs Starter rate</div>
-      <button class="pbtn feat" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Buy Standard Pack</button>
+      <button class="pbtn" onclick="window.location.href='https://assess.smartrisksheets.com/login'">Buy Standard Pack</button>
       <div class="poverage">Access granted immediately after payment</div>
     </div>
 
@@ -795,7 +795,7 @@
       <div class="pfeat"><div class="pcheck">&#10003;</div>Dedicated account support</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Credits valid for 12 months.</div>
       <div class="pfeat"><div class="pcheck">&#10003;</div>Save 17.5% vs Starter rate</div>
-      <button class="pbtn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Buy Professional Pack</button>
+      <button class="pbtn" onclick="window.location.href='https://assess.smartrisksheets.com/login'">Buy Professional Pack</button>
       <div class="poverage">Access granted immediately after payment</div>
     </div>
 
@@ -822,13 +822,14 @@
 
 <iframe name="ml-silent" style="display:none" aria-hidden="true"></iframe>
 
-<!-- CTA -->
+
+  <!-- CTA -->
 <section class="cta-sec" id="contact">
-  <h2 class="cta-h">Start your free trial today.</h2>
-  <p class="cta-s">2 free assessments. No credit card. No commitment. Join the analysts already using SmartRisk Credit for Commercial Paper assessments in Nigeria.</p>
+  <h2 class="cta-h">Stay in the loop.</h2>
+  <p class="cta-s">Get product updates, Nigerian capital markets insights, and early access to new features — straight to your inbox. No spam, unsubscribe any time.</p>
   <div class="cta-row">
     <input class="cta-in" type="email" placeholder="Enter your work email" id="cta-email">
-    <button class="btn-primary" onclick="handleCTA()">Start Free Trial &rarr;</button>
+    <button class="btn-primary" onclick="handleCTA()">Subscribe &rarr;</button>
   </div>
   <p style="font-size:11px;color:rgba(255,255,255,0.28);margin-top:10px;max-width:440px;margin-left:auto;margin-right:auto;line-height:1.6;">
     By submitting, you consent to receiving product updates from SmartRisk Sheets Technologies Limited.
@@ -836,6 +837,9 @@
     You may withdraw consent at any time via <a href="mailto:support@smartrisksheets.com" style="color:rgba(255,255,255,0.45);text-decoration:underline;">support@smartrisksheets.com</a>.
   </p>
   <div id="cta-msg" style="margin-top:14px;font-size:13px;color:rgba(255,255,255,0.5);min-height:20px;"></div>
+  <p style="margin-top:28px;font-size:13px;color:rgba(255,255,255,0.4);">
+    Ready to start? &nbsp;<a href="https://assess.smartrisksheets.com/login" style="color:#01b88e;font-weight:600;">Go to the app →</a>
+  </p>
 </section>
 
 <!-- FOOTER -->
